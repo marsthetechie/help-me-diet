@@ -3,3 +3,9 @@ body {
     padding: 0;
     background-color: #71613d;
 }
+
+.cover-row img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
