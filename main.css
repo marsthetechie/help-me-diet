@@ -15,13 +15,24 @@ h1 {
     padding: 1.5%;
 }
 
+.title-row {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #95d0aa;
+}
+
+.instructions {
+    font-size: 18px;
+}
+
 .cover-row img{
     width: 300px;
     height: 300px;
     cursor: pointer;
 }
 
-.instructions {
-    display: inline;
-    margin: 0 auto;
+#about {
+    text-align: center;
+    color: #95d0aa;
 }
