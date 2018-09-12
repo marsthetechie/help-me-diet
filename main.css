@@ -26,13 +26,38 @@ h1 {
     font-size: 18px;
 }
 
+#about {
+    width: 30%;
+    margin: 0 auto;
+    color: #95d0aa;
+}
+
+.instructions-table {
+    margin: 0 auto;
+    width: 30%;
+    color: #95d0aa;
+}
+
+@media only screen and (max-width: 600px) {
+    #about {
+        width: 80%;
+    }
+
+    .instructions-table {
+        width: 80%;
+    }
+}
+
+.instructions-num {
+    font-size: 36px;
+}
+
+.instructions-text {
+    padding-left: 20px;
+}
+
 .cover-row img{
     width: 300px;
     height: 300px;
     cursor: pointer;
-}
-
-#about {
-    text-align: center;
-    color: #95d0aa;
 }
