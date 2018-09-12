@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
 body {
     margin: 0;
     padding: 0;
     background-color: #71613d;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: #95d0aa;
+    color: #71613d;
+    margin-top: 0;
+    padding: 1.5%;
 }
 
 .cover-row img{
     width: 300px;
     height: 300px;
     cursor: pointer;
+}
+
+.instructions {
+    display: inline;
+    margin: 0 auto;
 }
