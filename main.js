@@ -128,7 +128,7 @@ const gameOver = str => {
     if (str === 'win') {
         startButton.innerHTML = "Diet successful! Play again?";
     } else {
-        startButton.innerHTML = "Uki is eating pizza. Bye Diet. You lost.";
+        startButton.innerHTML = "Uki is eating pizza. Bye Diet. You lost. Try again?";
     }
 }
 
