@@ -1,3 +1,5 @@
+// Plate plate1 is pizza (junk food)
+
 let plate1 = "assets/pizza.svg";
 let plate2 = "assets/food.svg";
 let plate3 = "assets/chicken.svg";
@@ -33,11 +35,15 @@ const randomPlateGenerator = () => {
     }
 }
 
-const playPlates = () => {
-    numClosedPlates--;
-    if (numClosedPlates === 0) {
-        gameOver('win');
-    }
+const playPlates = plate => {
+        numClosedPlates--;
+        if (numClosedPlates === 0) {
+            gameOver('win');
+        } else if (isJunkFood(plate)) {
+            gameOver();
+        }
+    
+
 }
 
 const isClicked = plate => {
@@ -48,31 +54,39 @@ const isClicked = plate => {
     }
 }
 
+const isJunkFood = pizza => {
+    if (pizza.src === plate1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 cover1.onclick = () => {
 
     if (!isClicked()) {
         cover1.src = openPlate1;
-        playPlates();
+        playPlates(cover1);
     }
-    
+
 }
 
 cover2.onclick = () => {
 
     if (!isClicked()) {
         cover2.src = openPlate2;
-        playPlates();
+        playPlates(cover2);
     }
-    
+
 }
 
 cover3.onclick = () => {
 
     if (!isClicked()) {
         cover3.src = openPlate3;
-        playPlates();
+        playPlates(cover3);
     }
-    
+
 }
 
 const gameOver = str => {
