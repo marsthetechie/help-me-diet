@@ -71,8 +71,8 @@ h1 {
 #start-button {
     margin: 0 auto;
     width: 100px;
-    height: 50px;
     padding-top: 30px;
+    padding-bottom: 30px;
     margin-bottom: 100px;
     text-align: center;
     background-color: #433c39;
