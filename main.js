@@ -11,6 +11,8 @@ let openPlate1;
 let openPlate2;
 let openPlate3;
 
+let startButton = document.getElementById('start-button');
+
 let numClosedPlates = 3;
 
 const randomPlateGenerator = () => {
@@ -34,7 +36,7 @@ const randomPlateGenerator = () => {
 const playPlates = () => {
     numClosedPlates--;
     if (numClosedPlates === 0) {
-        gameOver();
+        gameOver('win');
     }
 }
 
@@ -73,3 +75,8 @@ cover3.onclick = () => {
     
 }
 
+const gameOver = str => {
+    if (str === 'win') {
+        startButton.innerHTML = "Diet successful! Play again?";
+    }
+}
