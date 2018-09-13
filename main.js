@@ -79,7 +79,6 @@ const randomPlateGenerator = () => {
 
 cover1.onclick = () => {
     if (currentlyPlaying && !isClicked(coverImage1)) {
-        console.log('yes');
         coverImage1.src = openPlate1;
         playPlates(cover1);
     }
