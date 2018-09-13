@@ -38,17 +38,38 @@ const playPlates = () => {
     }
 }
 
+const isClicked = plate => {
+    if (plate.src === closedPlate) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
 cover1.onclick = () => {
-    cover1.src = openPlate1;
-    playPlates();
+
+    if (!isClicked()) {
+        cover1.src = openPlate1;
+        playPlates();
+    }
+    
 }
 
 cover2.onclick = () => {
-    cover2.src = openPlate2;
-    playPlates();
+
+    if (!isClicked()) {
+        cover2.src = openPlate2;
+        playPlates();
+    }
+    
 }
 
 cover3.onclick = () => {
-    cover3.src = openPlate3;
-    playPlates();
+
+    if (!isClicked()) {
+        cover3.src = openPlate3;
+        playPlates();
+    }
+    
 }
+
