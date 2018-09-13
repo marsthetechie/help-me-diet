@@ -11,7 +11,7 @@ let openPlate1;
 let openPlate2;
 let openPlate3;
 
-let numClosedPLates = 3;
+let numClosedPlates = 3;
 
 const randomPlateGenerator = () => {
     let junkFood = Math.floor(Math.random() * 3);
@@ -29,4 +29,26 @@ const randomPlateGenerator = () => {
         openPlate1 = plate2;
         openPlate2 = plate3;
     }
+}
+
+const playPlates = () => {
+    numClosedPlates--;
+    if (numClosedPlates === 0) {
+        gameOver();
+    }
+}
+
+cover1.onclick = () => {
+    cover1.src = openPlate1;
+    playPlates();
+}
+
+cover2.onclick = () => {
+    cover2.src = openPlate2;
+    playPlates();
+}
+
+cover3.onclick = () => {
+    cover3.src = openPlate3;
+    playPlates();
 }
