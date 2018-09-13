@@ -29,13 +29,13 @@ h1 {
 #about {
     width: 30%;
     margin: 0 auto;
-    color: #95d0aa;
+    color: #b7b195;
 }
 
 .instructions-table {
     margin: 0 auto;
     width: 30%;
-    color: #95d0aa;
+    color: #b7b195;
 }
 
 @media only screen and (max-width: 600px) {
@@ -67,3 +67,15 @@ h1 {
     cursor: pointer;
 }
 
+.start-button {
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: #433c39;
+    color: #95d0aa;
+    cursor: pointer;
+    border-radius: 5px;
+}
