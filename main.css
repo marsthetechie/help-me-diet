@@ -58,6 +58,7 @@ h1 {
 
 .cover-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
