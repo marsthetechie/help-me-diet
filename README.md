@@ -10,3 +10,7 @@ But if the pizaa is on the plate right away or on the second plate, you will los
 Have fun and good luck!
 
 When you open the game for the first time, you just start opening the covers on plates, and to try again or restart press the button beneath (It will tell you if you won or lost).
+
+## Preview
+
+You can view and play the game at https://marsthetechie.github.io/help-me-diet/ .
